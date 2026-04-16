@@ -1,10 +1,10 @@
-package com.example.dockerisation_1;
+package com.example.myservice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class Dockerisation1ApplicationTests {
+class MyServiceAppTests {
 
 	@Test
 	void contextLoads() {
