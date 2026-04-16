@@ -26,14 +26,14 @@ jobs:
                   distribution: 'temurin'
                   java-version: '21'
             - name: Make gradlew executable
-              working-directory: ./MyService
+              working-directory: .
               run: chmod +x gradlew
 
             - name: Run tests
-              working-directory: ./MyService
+              working-directory: .
               run: ./gradlew test
 
             - name: Build Docker images
               run: |
-                  docker build -t myservice:latest ./MyService
+                  docker build -t myservice:latest .
             
