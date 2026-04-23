@@ -9,8 +9,11 @@ import java.util.List;
 @RestController
 public class RentService {
 
-    @Autowired
-    private CarService carService;
+    private final CarService carService;
+
+    public RentService(CarService carService) {
+        this.carService = carService;
+    }
 
     @GetMapping("/")
     public String sayHello(){
